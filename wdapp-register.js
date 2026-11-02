@@ -1,0 +1,2 @@
+/* PWA build only. Native source is exported separately. */
+(()=>{const root=new URL('./',document.currentScript.src);if(!window.isSecureContext||!('serviceWorker' in navigator)){console.info('PWA offline support requires HTTPS or localhost and service-worker support.');return;}window.addEventListener('load',()=>navigator.serviceWorker.register(new URL('wdapp-sw.js',root),{scope:root.href}).catch(error=>console.error('Service-worker registration failed:',error)));})();

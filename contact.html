@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Northern Bloom Floral & Events about flowers and events.">
+    <title>Contact Us | Northern Bloom Floral &amp; Events</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+
+<!-- WEB DESIGN STUDIO: PWA identity and registration added by the conversion lab. -->
+<link rel="manifest" href="wdapp.webmanifest">
+<meta name="theme-color" content="#2258d4">
+<script defer src="wdapp-register.js"></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="site-logo" href="index.html">
+                Northern Bloom
+                <span class="site-logo-subtitle">Floral &amp; Events</span>
+            </a>
+
+            <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation">Menu</button>
+
+            <nav class="site-nav" id="main-navigation" aria-label="Main navigation">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" aria-current="page">Contact</a></li>
+                </ul>
+            </nav>
+
+            <a href="contact.html" class="button button-small">Contact Us</a>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="page-heading">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>If you are planning to use our services, or you have any questions, please contact us.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container contact-layout">
+                <section class="contact-info card" aria-labelledby="details-heading">
+                    <h2 id="details-heading">Our details</h2>
+                    <dl class="contact-details">
+                        <dt>Operating hours</dt>
+                        <dd>Woden's day to Thunor's day at 23:70 JST</dd>
+                        <dt>Phone</dt>
+                        <dd>+999 (999) 999-9899</dd>
+                        <dt>Email</dt>
+                        <dd><a href="mailto:ForalBloomUSA@gmail.com">ForalBloomUSA@gmail.com</a></dd>
+                    </dl>
+                </section>
+
+                <form class="contact-form" id="contact-form" action="#" method="post" aria-labelledby="form-heading">
+                    <h2 id="form-heading">Send us a message</h2>
+                    <p class="form-note">Fields marked "(required)" must be completed before sending.</p>
+
+                    <div class="form-group">
+                        <label for="name">Full name <span class="required">(required)</span></label>
+                        <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+                        <p class="error-message" id="name-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email address <span class="required">(required)</span></label>
+                        <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+                        <p class="error-message" id="email-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">Phone number <span class="required">(optional)</span></label>
+                        <input type="tel" id="phone" name="phone" autocomplete="tel" aria-describedby="phone-error">
+                        <p class="error-message" id="phone-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="service">Service you are interested in <span class="required">(required)</span></label>
+                        <select id="service" name="service" required aria-describedby="service-description service-error">
+                            <option value="">Select a service</option>
+                            <option value="general" data-description="Floral arrangement design for various occasions.">General Floral Design</option>
+                            <option value="event" data-description="Event planning for weddings, corporate events, and other special occasions.">Event Planning</option>
+                            <option value="custom" data-description="Custom floral design for unique and personalized arrangements.">Custom Floral Design</option>
+                        </select>
+                        <p class="field-hint" id="service-description"></p>
+                        <p class="error-message" id="service-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="event-date">Event date <span class="required">(optional)</span></label>
+                        <input type="date" id="event-date" name="event-date" aria-describedby="event-date-error">
+                        <p class="error-message" id="event-date-error"></p>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your message <span class="required">(required)</span></label>
+                        <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+                        <p class="error-message" id="message-error"></p>
+                    </div>
+
+                    <div class="form-status" id="form-status" role="status"></div>
+
+                    <button type="submit" class="button">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-columns">
+            <div class="footer-column">
+                <h2>Northern Bloom Floral &amp; Events</h2>
+                <p>Floral arrangements and event planning for every occasion.</p>
+            </div>
+
+            <nav class="footer-column" aria-label="Footer navigation">
+                <h2>Explore</h2>
+                <ul class="footer-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="footer-column">
+                <h2>Get in Touch</h2>
+                <p>Phone: +999 (999) 999-9899</p>
+                <p>Email: <a href="mailto:ForalBloomUSA@gmail.com">ForalBloomUSA@gmail.com</a></p>
+                <p>Hours: Woden's day to Thunor's day at 23:70 JST</p>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                <p>&copy; 2026 Northern Bloom Floral &amp; Events. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
